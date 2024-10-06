@@ -1,0 +1,27 @@
+[package]
+name = "gibbon"
+
+edition = "2021"
+version = "0.1.0"
+
+[lints]
+rust.unused_qualifications = { level = "warn", priority = 100 }
+# rustdoc.all                = { level = "warn", priority = 100 }
+
+# clippy.all = { level = "warn", priority = 0 }
+# clippy.nursery = { level = "warn", priority = 0 }
+# clippy.pedantic = { level = "warn", priority = 0 }
+
+# clippy.allow_attributes_without_reason = { level = "deny", priority = 100 }
+# clippy.as_conversions                  = { level = "deny", priority = 100 }
+# clippy.cast_possible_truncation        = { level = "deny", priority = 100 }
+# clippy.undocumented_unsafe_blocks      = { level = "deny", priority = 100 }
+
+clippy.match_bool         = { level = "allow", priority = 100 }
+clippy.must_use_candidate = { level = "allow", priority = 100 }
+clippy.option_if_let_else = { level = "allow", priority = 100 }
+clippy.single_match_else  = { level = "allow", priority = 100 }
+clippy.too_many_lines     = { level = "allow", priority = 100 }
+clippy.wildcard_imports   = { level = "allow", priority = 100 }
+
+[dependencies]
